@@ -3,19 +3,20 @@
  FSD is our our work titled "FSD: An Initial Chinese Dataset for Fake Song Detection," which was available on arxiv at "https://arxiv.org/abs/2309.02232".
 ## Update
 We have released the best song-trained ADD model, W2V2-LCNN, as outlined in the paper. The output logits can be seen in `/Inference_score`.
-![](./img/table4.png) The speech-trained ADD model can be found in this repository [ADD-W2V2-LCNN-19LA0.6](https://github.com/xieyuankun/ADD-W2V2-LCNN-19LA0.6).
+![](./img/table4.png) The speech-trained ADD model by 19LA, W2V2-LCNN, can be found in this repository [ADD-W2V2-LCNN-19LA0.6](https://github.com/xieyuankun/ADD-W2V2-LCNN-19LA0.6).
 ## Inference
 Run `python generate_FSD_online.py` to generate the result txt. 
 
-For EER result, run `python evaluate_FSD.py`.
+Get EER result, run `python evaluate_FSD.py`.
 
 Test the model on your dataset, please modify `/wav2vec2_xls-r300-song/raw_dataset.py`.
 
-Line28 `self.path_to_audio = '/data2/xyk/evalvocal/F01/wav'`.
+Line28 `self.path_to_audio = '/data2/xyk/evalvocal/F01/wav'` to your song fold.
 
-Line29 `self.path_to_protocol = '/data2/xyk/evalvocal/F01/label.txt'`.
+Line29 `self.path_to_protocol = '/data2/xyk/evalvocal/F01/label.txt'` to your song label like `/label`.
  
-
+- The provided model is trained by the extracted vocal track of FSD training set, thus, for any inference, please extract the 
+vocal track of the original song by [UVR5](https://github.com/Anjok07/ultimatevocalremovergui) first.
 
 
 ## Reference
