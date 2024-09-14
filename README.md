@@ -2,7 +2,9 @@
  This repository presents a subset of the FSD dataset for song deepfake detection.
  FSD is our our work titled "FSD: An Initial Chinese Dataset for Fake Song Detection," which was available on arxiv at "https://arxiv.org/abs/2309.02232".
 ## Update
-We have released the best song-trained ADD model, W2V2-LCNN, as outlined in the paper. The output logits can be seen in `/Inference_score`.
+- We have released all fake song samples for non-commercial academic research. You can access them via the following link: https://drive.google.com/drive/folders/19J4Y3lvbL12Z29irO7HNrfFvgA1mkyVz?usp=drive_link. The folder contains all song samples, vocal samples, and short segments divided by breath pauses for training purposes. When applying for access to the dataset, please be sure to provide your name, affiliated institution, and intended use.
+
+- We have released the best song-trained ADD model, W2V2-LCNN, as outlined in the paper. The output logits can be seen in `/Inference_score`.
 ![](./img/table4.png) The speech-trained ADD model by 19LA, W2V2-LCNN, can be found in this repository [ADD-W2V2-LCNN-19LA0.6](https://github.com/xieyuankun/ADD-W2V2-LCNN-19LA0.6).
 ## Inference
 Run `python generate_FSD_online.py` to generate the result txt. 
