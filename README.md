@@ -16,11 +16,6 @@ FSD is our our work titled "FSD: An Initial Chinese Dataset for Fake Song Detect
 
     If you need to reproduce the experiments, please download 16k_FSD.zip and organize the training, validation, and test sets according to the structure provided in the label folder.
 
-  ⚠️ **When applying for access**, please provide:  
-  - Full name  
-  - Institutional affiliation (university/lab/organization)  
-  - Intended use  
-
 ## 🔒 Access Policy (Application Required)  
 To protect the rights of original content owners and ensure responsible usage, **this dataset is not publicly downloadable**.
 
